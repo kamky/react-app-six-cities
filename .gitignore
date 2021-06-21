@@ -1,0 +1,9 @@
+# NodeJS
+node_modules
+
+# Editor
+.vscode
+
+# Project
+public/bundle.js
+public/bundle.js.map
