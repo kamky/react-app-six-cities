@@ -1,6 +1,15 @@
 // Core
 import React from "react";
+import {BrowserRouter} from "react-router-dom";
 
+// Other
+import {App} from "../../routes";
+
+// Component
 export const Root = () => {
-  return <div>The root react component</div>;
+  return (
+    <BrowserRouter>
+      <App />
+    </BrowserRouter>
+  );
 };
