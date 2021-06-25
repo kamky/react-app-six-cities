@@ -9,10 +9,12 @@ import rootReducer from "./root-reducer";
 
 // Middlewares
 const middlewares = [];
+import thunk from "redux-thunk";
 import {logger} from "./middlewares/redux-logger";
 
-// TODO: Нужно убрать с pruduction версии
+// TODO: Нужно убрать с pruduction версии logger
 middlewares.push(logger);
+middlewares.push(thunk);
 
 // Store
 export default createStore(
